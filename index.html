@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		<div class="form">
+		<section class="driver">
+			<p>
+			  <label>Type<span>*</span></label>
+			</p>
+			  <select id="Traktor">
+				  <option>Traktor</option>
+			  </select>
+			<p>
+			 <label>SubType<span>*</span></label>
+			</p>
+			 <input name="Text" type="Text" placeholder="Fake">
+			<p>
+			  <label>
+				  Specs
+			  </label>
+			</p>
+			  <input name="Text" type="Text" placeholder="Nullam porttitor lacus at turpis. Do">
+			<p>
+			  <label>
+				   Driver
+			  </label>
+			</p>
+			  <select id="select">
+				 <option>Select</option>
+			  </select>
+		</section>
+		 <section class="Fake">
+			<p>
+			  <label>Vehicle ID Namber (VIN)<span>*</span></label>
+			</p>
+				<input id="Vehicle" name="Text" type="Text" placeholder="WBA3A5C50123">
+			<p>
+			  <label>Make<span>*</span></label>
+			</p>
+			    <input id="Make" name="Text" type="Text" placeholder="Fake">
+			<p>
+			  <label>Model<span>*</span></label>
+			</p>
+			  <input id="Model" name="Text" type="Text" placeholder="Fake">
+			<div>
+			   <div id="Year">
+			      <p><label>Year</label><span>*</span></p>
+			      <input type="Namber" name="Year" value="2008" size="1">
+			   </div>
+			<div id="GVW">
+			      <p><label>GVW</label><span>*</span></p>
+			      <input type="Namber" name="GVW" value="20092" size="2">
+			</div>
+			<div id="Unit">
+			      <p><label>Unit</label><span>*</span></p>
+			      <select>
+				      <option>LBS</option>
+			      </select>
+			</div>
+		</section>
+			   <section class="Plate">
+		       <p>
+			    <label>Licens Plate<span>*</span></label>
+			   </p>
+			     <input name="Text" type="Text" placeholder="XK-H-2ASDASD">
+			   <p>
+			    <label>
+				    Port Pass RFID
+			    </label>
+			   </p>
+			     <p><input type="checkbox" name="a" value="Type here" checked>Type here</p>
+			   <p>
+			     <label>Ownershyp<span>*</span></label>
+			   </p>
+			      <select id="Owned">
+				    <option>Owned</option>
+			      </select>
+			    <p>
+			      <label>
+				      Truck Type
+			      </label>
+			    </p>
+			       <select id="Type">
+				     <option>Sleeper</option>
+			       </select>
+			    </section>
+			    <section class="State">
+			    	<h4>Registration</h4>
+			    	<p>
+			          <label>State<span>*</span></label>
+			        </p>
+			          <select id="AL">
+				          <option>
+				          	AL-Alabama
+				          </option>
+			          </select>
+			          <p><label>Data<span>*</span></label></p>
+			             <input type="data" name="calendar" value="09/01/2018">
+			             <div>
+			             	<div class="exp">
+			             		<p><label>GVW<span>*</span></label></p>
+			                    <input type="Namber" name="GVW" value="42283" size="2">
+			             	</div>
+			             	<div class="doc">
+			             		<p><label>Unit<span>*</span></label></p>
+			                    <select>
+				                   <option>KGS</option>
+			                    </select>
+			             	</div>
+			             </div>
+			    </section>
+			    <section class="Doc">
+			    	<p>
+			          <label>Restrictions<span>*</span></label>
+			        </p>
+			          <select id="Highway">
+				          <option>
+				          	Highway
+				          </option>
+			          </select>
+			          <p><label>Exp.Data<span>*</span></label></p>
+			             <input type="date" name="calendar" value="05/25/2018">
+			             <p><label>Doc.Image</label></p>
+			             <input id="Upload" type="submit" value="Upload">
+			    </section>
+			  </div>
+	</form>
+	<style>
+		body {
+			background-color: grey;
+
+		}
+		.form {
+			width: 100%;
+			height: 300px;
+			position: fixed;
+			align-items: center;
+            justify-content: center;
+			top: 100px;
+			left:175px;
+			margin: auto;
+		}
+		#GVW, #Year, #Unit {
+			display: inline-block;
+		}
+		#GVW, #Year {
+			margin-right: 15px;
+		}
+		.driver, .Fake, .Plate, .State, .Doc {
+			display: inline-block;
+			margin-right: 30px; 
+		}
+		.exp, .doc {
+			display: inline-block;
+		}
+		.exp {
+			margin-right: 45px;
+		}
+		#Traktor, #select, #Highway, #AL, #Owned, #Type, #Make, #Model, #Vehicle {
+			width: 100%;
+		}
+		span {
+			color: red;
+		}
+		label {
+			font-family: Roboto, sans-serif;
+			font-size: 12px;
+		}
+		#Upload {
+			color: white;
+			background-color: blue;
+			border-radius: 5px;
+		}
+	</style>
+</body>
+</html>
